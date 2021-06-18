@@ -3,7 +3,7 @@ clone the repo
 1. Basic way
 2. docker compose (needs only docker environment)
 
-## Basic way (without build)
+## Basic way
 ```
 $ cd backend
 $ pip install -r requirements.txt
