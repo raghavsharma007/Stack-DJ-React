@@ -12,7 +12,7 @@ function Pagination({dataPerPage, totalData, paginate}) {
             <ul className="flex">
                 {pageNumbers.map(number => (
                     <li key={number}>
-                        <a onClick={() => paginate(number)} className="bg-blue-600 rounded-sm px-2 mx-1" href="!#">
+                        <a onClick={() => paginate(number)} className="bg-blue-600 rounded-sm px-2 mx-1 px-1" href="!#">
                             {number}
                         </a>
                     </li>

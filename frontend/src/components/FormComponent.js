@@ -58,7 +58,9 @@ const FormComponent = () => {
                 </p>
             </div>
             <div className="w-4/5 m-auto">
-                {
+                { error ? (
+                    <div className="uppercase text-lg font-semibold">Too Many requests(429)!!</div>
+                ) : (
                     currentData.map((x) => (
                         <ul className="border-2 border-blue-300 rounded-md p-2 bg-blue-100 text-sm">
                             <li className="font-semibold">{x.question}</li> 
@@ -67,6 +69,7 @@ const FormComponent = () => {
                             <li>Tags: {x.tags}</li>
                         </ul>
                     ))
+                )
                 }
                 <Pagination dataPerPage={dataPerPage} totalData={data.length} paginate={paginate} />
             </div>
